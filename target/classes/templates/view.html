@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <div th:replace="fragments/fragment :: header"></div>
+    <body>
+
+       	<h3 th:text="'NPM = ' + ${student.npm}">Student NPM</h3>
+       	<h3 th:text="'Name = ' + ${student.name}">Student Name</h3>
+       	<h3 th:text="'GPA = ' + ${student.gpa}">Student GPA</h3>
+    </body>
+    <div th:replace="fragments/fragment :: footer"></div>
+</html>
+

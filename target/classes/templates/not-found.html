@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <div th:replace="fragments/fragment :: header"></div>
+    <body>
+    	<h1>Student not found</h1>
+       	<h3 th:text="'NPM = ' + ${npm}">Student NPM</h3>
+    </body>
+    <div th:replace="fragments/fragment :: footer"></div>
+</html>

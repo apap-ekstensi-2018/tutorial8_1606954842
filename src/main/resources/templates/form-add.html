@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<div th:replace="fragments/fragment :: header"></div>
+<body>
+	<h4 class="page-header">Add Student</h4>
+
+	<form action="/student/add/submit" method="get">
+		<div>
+			<label for="npm">NPM</label> <input type="text" name="npm" />
+		</div>
+		<div>
+			<label for="name">Name</label> <input type="text" name="name" />
+		</div>
+		<div>
+			<label for="gpa">GPA</label> <input type="text" name="gpa" />
+		</div>
+
+		<div>
+			<button type="submit" name="action" value="save">Save</button>
+		</div>
+	</form>
+</body>
+<div th:replace="fragments/fragment :: footer"></div>
+</html>
+
