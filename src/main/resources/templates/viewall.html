@@ -8,6 +8,9 @@
     <script type="text/javascript" charset="utf8" src="/js/data.js"></script>
     <body>
         <h2 th:text=" 'Login as ' + ${#httpServletRequest.remoteUser}">Login as</h2>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
         <h4>All Students</h4>
         <table id="tableStudent" class="row-border hover stripe">
             <thead>
