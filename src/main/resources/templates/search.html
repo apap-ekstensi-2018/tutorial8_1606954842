@@ -1,0 +1,17 @@
+<!--
+ * Created on : April, 28 2018 
+ * Author     : Kurniawan Hendi Wijaya
+ * Name       : Hendi
+-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="fragments/fragment :: header"></div>
+<body>
+<h4>Cari mahasiswa dengan NPM</h4>
+<form action="/student/view" method="get">
+    <input type="number" name="npm" placeholder="NPM">
+    <input type="submit" value="Cari">
+</form>
+</body>
+<div th:replace="fragments/fragment :: footer"></div>
+</html>

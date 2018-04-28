@@ -60,6 +60,12 @@ public class StudentController
         }
     }
 
+    @RequestMapping("/student/search")
+    public String search(Model model) {
+        model.addAttribute("title", "Search mahasiswa");
+        return "search";
+    }
+
 
     @RequestMapping("/student/view/{npm}")
     public String viewPath (Model model,
